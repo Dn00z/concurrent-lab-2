@@ -1,5 +1,3 @@
-import java.util.concurrent.Semaphore;
-
 public class Rider implements Runnable {
 
     private int riderId;

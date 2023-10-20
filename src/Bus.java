@@ -1,5 +1,3 @@
-import java.util.concurrent.Semaphore;
-
 public class Bus implements Runnable {
 
     private int busId;
