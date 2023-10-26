@@ -21,7 +21,7 @@ public class Rider implements Runnable {
 
             BusStop.getBusBoardSemaphore().acquire(); // wait until boarding can happen
 
-            System.out.println("Rider " + riderId + "is boarding to bus");
+            System.out.println("Rider " + riderId + " is boarding to bus");
 
             BusStop.decrementRiderCount();
 

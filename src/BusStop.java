@@ -4,7 +4,7 @@ public class BusStop {
 
     private static int riderCount = 0; // waiting riders for a bus
 
-    private final static Semaphore riderWaitingSemaphore = new Semaphore(3); // to allow 50 riders to wait in bus stop
+    private final static Semaphore riderWaitingSemaphore = new Semaphore(50); // to allow 50 riders to wait in bus stop
 
     private  final static Semaphore busArrivalSemaphore = new Semaphore(1); // to keep track of bus arrival
 
