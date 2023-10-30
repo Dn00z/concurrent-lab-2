@@ -10,7 +10,7 @@ public class Bus implements Runnable {
     public void run() {
         try {
             BusStop.getBusArrivalSemaphore().acquire(); // acquiring to arrive to bus stop
-            System.out.println("Bus " + busId + " arrived\n" + "Waiting riders: " + BusStop.getRiderCount());
+            System.out.println("Bus " + busId + " arrived ----- " + "Waiting riders: " + BusStop.getRiderCount());
 
             if (BusStop.getRiderCount() > 0) {
                 BusStop.getBusBoardSemaphore().release(); // if there are riders, signaling boarding
